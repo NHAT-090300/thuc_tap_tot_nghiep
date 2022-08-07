@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập KTXD</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Gluten:wght@500;600&family=Raleway:wght@300;500;600;700&family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="container">
+            <div class="header">
+                <h2>Bài tập</h2>
+            </div>
+            <div class="content">
+                <div class="form-group">
+                    <div class="form-item">
+                        <h3>
+                            Nhóm thông số về vốn đầu tư
+                        </h3>
+                        <div>
+                            <div>
+                                <b>1. Tổng vốn đầu tư cố định</b>
+                                <div class="input-item">
+                                    <span>chi phí xây dựng khách sạn</span>
+                                    <input type="number" name="input1" value="48789" >
+                                    <span>( triệu đồng )</span>
+                                </div>
+                            </div>
+                            <div>
+                                <b>2. Nguồn vốn huy động đầu tư cố định</b>
+                                <div class="input-item">
+                                    <span>Vốn tự có</span>
+                                    <input type="number" name="input2" value="33798" >
+                                    <span>( triệu đồng )</span>
+                                </div>
+                                <div class="input-item">
+                                    <span>Vốn vay NHTC</span>
+                                    <input type="number" value="15000" >
+                                    <span>( triệu đồng )</span>
+                                </div>
+                            </div>
+                            <div>
+                                <b>3. Thời gian vay vốn</b>
+                                <div class="input-item">
+                                    <span>thời gian</span>
+                                    <input type="number" value="1" >
+                                    <span>( năm )</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-item">
+                        <h3>
+                            Nhóm thông số về chi phí vốn
+                        </h3>
+                        <div class="input-item">
+                            <span>Chi phí cơ hội vốn tự có</span>
+                            <input type="number" value="9" >
+                            <span>( % / năm )</span>
+                        </div>
+                        <div class="input-item">
+                            <span>Lãi suất vay vốn dài hạn</span>
+                            <input type="number" value="10.1" >
+                            <span>( % / năm )</span>
+                        </div>                        
+                        <div class="input-item">
+                            <span>Lãi suất vay vốn ngắn hạn</span>
+                            <input type="number" value="0" >
+                            <span>( % / năm )</span>
+                        </div>                        
+                    </div>
+
+                    <div class="form-item">
+                        <h3>
+                            Nhóm thông số về chi phí
+                        </h3>
+                        <div>
+                            <b>1. Chi phí chung</b>
+                            <div class="input-item">
+                                <span>Tiền lương</span>
+                                <input type="number" name="luong" value="7" >
+                                <span>( triệu / tháng )</span>
+                            </div>
+                            <div class="input-item">
+                                <span>Số lao động</span>
+                                <input type="number" name="soLaoDong" value="30" >
+                                <span>( người )</span>
+                            </div>  
+                            <div class="input-item">
+                                <span>Tăng lương hàng năm</span>
+                                <input type="number" name="tangLuong" value="3" >
+                                <span>( % / năm )</span>
+                            </div>                       
+                            <div class="input-item">
+                                <span>Bảo hiểm xã hội</span>
+                                <input type="number" name="BHXH" value="24" >
+                                <span>( % / năm )</span>
+                            </div>                       
+                            <div class="input-item">
+                                <span>Chi phí đào tạo nhân viên</span>
+                                <input type="number" name="daoTao" value="3" >
+                                <span>( % / năm )</span>
+                            </div>                       
+                            <div class="input-item">
+                                <span>Chi phí điện thoại, điện, nước</span>
+                                <input type="number" name="dienNuoc" value="8" >
+                                <span>( % / năm )</span>
+                            </div>                       
+                            <div class="input-item">
+                                <span>Chi phí quảng cáo, tiếp thị</span>
+                                <input type="number" name="quangCao" value="10" >
+                                <span>( % / năm )</span>
+                            </div>                       
+                            <div class="input-item">
+                                <span>Chi phí sửa chữa thường xuyên</span>
+                                <input type="number" name="suaChua" value="8" >
+                                <span>( % / năm )</span>
+                            </div>
+                            <div class="input-item">
+                                <span>Chi phí thuê đất</span>
+                                <input type="number" name="thueDat" value="20" >
+                                <span>( % / năm )</span>
+                            </div>   
+                            <div class="input-item">
+                                <span>Chi phí quản lí doanh nghiệp</span>
+                                <input type="number" name="quanLy" value="18" >
+                                <span>( % / năm )</span>
+                            </div>  
+                        </div>
+                        <div>
+                            <b>2. Hoạt động khách sạn</b>
+                            <div class="input-item">
+                                <span>chi phí phòng ngủ</span>
+                                <input type="number" name="phongNgu" value="8" >
+                                <span>( % / năm )</span>
+                            </div>
+                        </div>
+                        <div>
+                            <b>3. Hoạt động nhà hàng, spa</b>
+                            <div class="input-item">
+                                <span>Chi phí nhà hàng, spa</span>
+                                <input type="number" name="hDNhaHang" value="50" >
+                                <span>( % / năm )</span>
+                            </div>
+                        </div>
+                        <div>
+                            <b>4. Chế độ khấu hao</b>
+                            <div class="input-item">
+                                <span>Công trình khách sạn</span>
+                                <input type="number" name="nam" value="25" >
+                                <span>( năm )</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-item">
+                        <h3>
+                            Nhóm thông số về doanh thu
+                        </h3>
+                        <div>
+                            <div class="input-item">
+                                <span>Số lượng phòng</span>
+                                <input type="number" name="soPhong" value="55">
+                                <span>( phòng )</span>
+                            </div>
+                        </div>
+                        <div>
+                            <b>1. Đơn giá (chưa bao gồm VAT)</b>
+                            <div class="input-item">
+                                <span>Giá phòng bình quân</span>
+                                <input type="number" name="giaPhong" value="1000" >
+                                <span>( nghìn đồng / ngày)</span>
+                            </div>
+                            <div class="input-item">
+                                <span>Tốc độ tăng giá</span>
+                                <input type="number" name="giaTang" value="1" >
+                                <span>( % / năm )</span>
+                            </div>
+                        </div>
+                        <div>
+                            <b>2. Doanh thu từ nhà hàng, spa, bar</b>
+                            <div class="input-item">
+                                <span>Doanh thu phòng</span>
+                                <input type="number" name="nhaHang" value="10" >
+                                <span>( % )</span>
+                            </div>
+                        </div>
+                        <div>
+                            <b>3. Công suất hoạt động</b>
+                            <div class="input-item">
+                                <span>Năm thứ nhất</span>
+                                <input type="number" name="congSuat1" value="30" >
+                                <span> ( % )</span>
+                            </div>
+                            <div class="input-item">
+                                <span>5 năm sau</span>
+                                <input type="number"  name="congSuat2" value="50" >
+                                <span>( % )</span>
+                            </div>
+                            <div class="input-item">
+                                <span>Các năm còn lại</span>
+                                <input type="number"  name="congSuat3" value="60" >
+                                <span>( % )</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-item" style="display: block; margin-bottom: 50px;">
+                        <h3>Kết quả</h3>
+                        <div style="margin: 20px 0 20px 0; width: 100%">
+                            <div class="input-item">
+                                <span>số năm cần tính toán</span>
+                                <input type="number" name="soNam" value="10">
+                                <span>( năm )</span>
+                            </div>
+                            <div class="res-btn mt-5 mb-5">
+                                <button id="0" type="button" class="btn btn-outline-primary">Lợi nhuận</button>
+                                <button id="1" type="button" class="btn btn-outline-secondary">Chi phí</button>
+                                <button id="2" type="button" class="btn btn-outline-success">Doanh Thu</button>
+                            </div>
+                            <div class="res result-1">
+                                <h3 style="margin: 20px 0">
+                                    Lợi nhuận
+                                </h3>
+                                <table class="table table-hover" style="border-radius: 5px">
+                                    <thead class="thead-light bg-primary text-light" >
+                                        <tr>
+                                            <th scope="col" style="text-align: center">năm</th>
+                                            <th scope="col" style="text-align: center">tổng doanh thu</th>
+                                            <th scope="col" style="text-align: center">tổng chi phi</th>
+                                            <th scope="col" style="text-align: center">lợi nhuận</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="res-table-1">
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="res result-2">
+                                <h3 style="margin: 20px 0">
+                                    Chi phí
+                                </h3>
+                                <table class="table table-hover" style="border-radius: 5px">
+                                    <thead class="thead-light bg-primary text-light" >
+                                        <tr>
+                                            <th scope="col" style="text-align: center">năm</th>
+                                            <th scope="col" style="text-align: center">lương</th>
+                                            <th scope="col" style="text-align: center">tông lương</th>
+                                            <th scope="col" style="text-align: center">BHXH</th> 
+                                            <th scope="col" style="text-align: center">đào tạo</th>
+                                            <th scope="col" style="text-align: center">điện nước</th>
+                                            <th scope="col" style="text-align: center">quảng cáo</th>
+                                            <th scope="col" style="text-align: center">sửa chữa</th>
+                                            <th scope="col" style="text-align: center">quản lý</th>
+                                            <th scope="col" style="text-align: center">phòng ngủ</th>
+                                            <th scope="col" style="text-align: center">nhà hàng</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="res-table-2">
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="res result-3">
+                                <h3 style="margin: 20px 0">Doanh thu</h3>
+                                <table class="table table-hover" style="border-radius: 5px">
+                                    <thead class="thead-light bg-primary text-light" >
+                                        <tr>
+                                            <th scope="col" style="text-align: center">năm</th>
+                                            <th scope="col" style="text-align: center">công suất</th>
+                                            <th scope="col" style="text-align: center">giá phòng</th>
+                                            <th scope="col" style="text-align: center">doanh thu nhà hàng</th>
+                                            <th scope="col" style="text-align: center">doanh thu phòng</th>
+                                            <th scope="col" style="text-align: center">tổng doanh thu</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="res-table-3">
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+<script src="./index.js"></script>
+</html>

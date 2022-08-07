@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập KTXD</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Gluten:wght@500;600&family=Raleway:wght@300;500;600;700&family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+    <style>
+        *{
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+        body{
+            margin:0;
+            padding:0;
+            font-size:14px;
+        }
+        .container-fluid {
+            position: relative;
+            width:100%;
+        }
+        .container {
+            max-width: 800px;
+            margin:0 auto;
+            margin-bottom: 50px;
+        }
+        .header {
+            text-align: center;
+            background-image: url("https://hocthietkenoithat.org/wp-content/uploads/2017/11/cropped-header-background-1.jpg");
+            background-size: cover;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 10px 10px 0 0;
+            top: -1px;
+            position: sticky;
+            box-shadow: 0 20px 50px rgba(190, 218, 238, 0.394);
+        }
+        .header h2{
+            font-family: 'Gluten', cursive;
+            font-size: 30px;
+            color: rgb(73, 98, 100);
+        }
+        .content{
+            margin-bottom: 30px;
+        }
+        .form-group {
+            justify-content:  space-between;
+            margin-top: 20px;
+            box-shadow: 0 20px 50px rgba(109, 170, 213, 0.394);
+            border-radius: 0 0 10px 10px;
+            background-color: #f6fbff;
+        }
+        .form-item {
+            width: 100%;
+            padding: 10px 15px;
+            margin-top: 10px;
+        }
+        .form-item h3 {
+            font-family: 'Gluten', cursive;
+            font-size: 20px;
+            text-align: center;
+        }
+        .form-item div {
+            width: 90%;
+            margin: 0 auto;
+        }
+        .input-item{
+            display: flex;  
+            justify-content: space-between;
+            width: 90%;
+            margin: 0 auto;
+            padding: 10px;
+        }
+        input {
+            outline: none;  
+            border: none;
+            padding: 3px 10px;
+            border-bottom: 3px solid #ccc;
+            transition: all 0.3s;
+            text-align: center;
+            font-weight: bold;
+            letter-spacing: 2px; 
+            background-color: #f6fbff;
+        }
+        input:focus {
+            margin: 0px;
+            border-bottom: 3px solid rgb(182, 213, 250);
+            margin-bottom: 4px;
+        }
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+        }
+        input[type=number] {
+        -moz-appearance: textfield;
+        margin: 0;
+        }
+        .show {
+            display: block;
+        }
+        .hide {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="container">
+
+            <div class="header">
+                <div>
+                    <img style="width: 78px; position: absolute; top: 5px; left: 10px;" src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Logodhbk.jpg" alt="">
+                    <img style="width: 70px; position: absolute; top: 5px; left: 100px;" src="https://wref.dut.udn.vn/wp-content/uploads/2020/05/Logo_KhoaXDCongTrinhThuy.png" alt="">
+                </div>
+                <h2>THỰC TẬP TỐT NGHIỆP</h2>
+                <b>Họ và tên: Nguyễn Phước Nhật - Lớp: 18THXD</b>
+            </div>
+            <div class="content">
+                <div class="form-group">
+                    <!-- nhom von dau tu -->
+                    <div class="form-item">
+                        <h3>
+                            Nhóm thông số về vốn đầu tư
+                        </h3>
+                        <div>
+                            <div>
+                                <b>1. Tổng vốn đầu tư cố định</b>
+                                <div class="input-item">
+                                    <span>chi phí xây dựng khách sạn</span>
+                                    <input type="number" name="CPXayDung" value="60000" >
+                                    <span>( triệu đồng )</span>
+                                </div>
+                            </div>
+                            <div>
+                                <b>2. Nguồn vốn huy động đầu tư cố định</b>
+                                <div class="input-item">
+                                    <span>Vốn tự có</span>
+                                    <input type="number" name="VonCaNhan" value="35000" >
+                                    <span>( triệu đồng )</span>
+                                </div>
+                                <div class="input-item">
+                                    <span>Vốn vay NHTC</span>
+                                    <input type="number" name="VonNganHang" value="25000" >
+                                    <span>( triệu đồng )</span>
+                                </div>
+                            </div>
+                            <div>
+                                <b>3. Thời gian vay vốn</b>
+                                <div class="input-item">
+                                    <span>thời gian</span>
+                                    <input type="number" name="ThoiGanVay" value="12" >
+                                    <span>( năm )</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- nhom chi phi von -->
+                    <div class="form-item">
+                        <h3>
+                            Nhóm thông số về chi phí vốn
+                        </h3>
+                        <div class="input-item">
+                            <span>Lãi suất tiền gửi ngân hàng</span>
+                            <input type="number" name="LSGui" value="5.6" >
+                            <span>( % / năm )</span>
+                        </div>
+                        <div class="input-item">
+                            <span>Lãi suất vay vốn dài hạn</span>
+                            <input type="number" name="LSVayDaiHan" value="8.2" >
+                            <span>( % / năm )</span>
+                        </div>                        
+                        <div class="input-item">
+                            <span>Lãi suất vay vốn ngắn hạn</span>
+                            <input type="number"  name="LSVayNganHan" value="0" >
+                            <span>( % / năm )</span>
+                        </div>                        
+                    </div>
+                    <!-- nhom chi phi -->
+                    <div class="form-item">
+                        <h3>
+                            Nhóm thông số về chi phí
+                        </h3>
+                        <div>
+                            <b>1. Chi phí chung</b>
+                            <div class="input-item">
+                                <span>Tiền lương</span>
+                                <input type="number" name="luong" value="12" >
+                                <span>( triệu đồng/ tháng )</span>
+                            </div>
+                            <div class="input-item">
+                                <span>Số lao động</span>
+                                <input type="number" name="soLaoDong" value="50" >
+                                <span>( người )</span>
+                            </div>  
+                            <div class="input-item">
+                                <span>Tăng lương hàng năm</span>
+                                <input type="number" name="tangLuong" value="3" >
+                                <span>( % / năm )</span>
+                            </div>                       
+                            <div class="input-item">
+                                <span>Bảo hiểm xã hội</span>
+                                <input type="number" name="BHXH" value="24" >
+                                <span>( % lương / năm )</span>
+                            </div>                       
+                            <div class="input-item">
+                                <span>Chi phí đào tạo nhân viên</span>
+                                <input type="number" name="daoTao" value="4" >
+                                <span>( % doanh thu / năm )</span>
+                            </div>                       
+                            <div class="input-item">
+                                <span>Chi phí điện thoại, điện, nước</span>
+                                <input type="number" name="dienNuoc" value="4" >
+                                <span>( % doanh thu / năm )</span>
+                            </div>                       
+                            <div class="input-item">
+                                <span>Chi phí quảng cáo, tiếp thị</span>
+                                <input type="number" name="quangCao" value="5" >
+                                <span>( % doanh thu / năm )</span>
+                            </div>                       
+                            <div class="input-item">
+                                <span>Chi phí sửa chữa thường xuyên</span>
+                                <input type="number" name="suaChua" value="7" >
+                                <span>( % doanh thu / năm )</span>
+                            </div>
+                            <div class="input-item">
+                                <span>Chi phí thuê đất</span>
+                                <input type="number" name="thueDat" value="0" >
+                                <span>( triệu đồng / tháng )</span>
+                            </div>   
+                            <div class="input-item">
+                                <span>Chi phí quản lí doanh nghiệp</span>
+                                <input type="number" name="quanLy" value="12" >
+                                <span>( % doanh thu / năm )</span>
+                            </div>  
+                        </div>
+                        <div>
+                            <b>2. Hoạt động khách sạn</b>
+                            <div class="input-item">
+                                <span>chi phí phòng ngủ</span>
+                                <input type="number" name="phongNgu" value="10" >
+                                <span>( % doanh thu / năm )</span>
+                            </div>
+                            <div class="input-item">
+                                <span>chi phí kháo hao vật dụng</span>
+                                <input type="number" name="khaoHao" value="10" >
+                                <span>( % doanh thu phòng/ năm )</span>
+                            </div>
+                        </div>
+                        <div>
+                            <b>3. Hoạt động nhà hàng, spa</b>
+                            <div class="input-item">
+                                <span>Chi phí nhà hàng, spa</span>
+                                <input type="number" name="hDNhaHang" value="40" >
+                                <span>( % doanh thu nhà hàng / năm )</span>
+                            </div>
+                        </div>
+                        <div>
+                            <b>4. Chi phí môi giới</b>
+                            <div class="input-item">
+                                <span>Chi phí hoa hồng môi giới</span>
+                                <input type="number" name="moiGioi" value="3" >
+                                <span>( % doanh thu / năm )</span>
+                            </div>
+                        </div>
+                        <div>
+                            <b>5. Chi phí dịch vụ blocking online</b>
+                            <div class="input-item">
+                                <span>Chi phí dịch vụ blocking online</span>
+                                <input type="number" name="blocking" value="5" >
+                                <span>( % doanh thu phòng/ năm )</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- nhom ve doah thu -->
+                    <div class="form-item">
+                        <h3>
+                            Nhóm thông số về doanh thu
+                        </h3>
+                        <div>
+                            <div class="input-item">
+                                <span>Số lượng phòng</span>
+                                <input type="number" name="soPhong" value="85">
+                                <span>( phòng )</span>
+                            </div>
+                        </div>
+                        <div>
+                            <b>1. Đơn giá (chưa bao gồm VAT)</b>
+                            <div class="input-item">
+                                <span>Giá phòng bình quân</span>
+                                <input type="number" name="giaPhong" value="0.95" >
+                                <span>( triệu đồng / ngày)</span>
+                            </div>
+                            <div class="input-item">
+                                <span>Tốc độ tăng giá</span>
+                                <input type="number" name="giaTang" value="2" >
+                                <span>( % / năm )</span>
+                            </div>
+                        </div>
+                        <div>
+                            <b>2. Doanh thu từ nhà hàng, spa, bar</b>
+                            <div class="input-item">
+                                <span>Doanh thu nha hàng</span>
+                                <input type="number" name="nhaHang" value="17" >
+                                <span>( % doanh thu phòng / năm )</span>
+                            </div>
+                            <div class="input-item">
+                                <span>Doanh thu spa + massage + tour du lịch</span>
+                                <input type="number" name="spa" value="15" >
+                                <span>(% doanh thu phòng / năm)</span>
+                            </div>
+                        </div>
+                        <div>
+                            <b>3. Công suất hoạt động</b>
+                            <div class="input-item">
+                                <span>Năm thứ nhất</span>
+                                <input type="number" name="congSuat1" value="40" >
+                                <span> ( % / năm )</span>
+                            </div>
+                            <div class="input-item">
+                                <span>7 năm sau</span>
+                                <input type="number"  name="congSuat2" value="70" >
+                                <span>( % / năm )</span>
+                            </div>
+                            <div class="input-item">
+                                <span>Các năm còn lại</span>
+                                <input type="number"  name="congSuat3" value="50" >
+                                <span>( % / năm )</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ket qua -->
+                    <div class="form-item" style="display: block; margin-bottom: 50px;">
+                        <h3>Kết quả</h3>
+                        <div style="margin: 20px 0 20px 0; width: 100%">
+                            <div class="input-item">
+                                <span>số năm cần tính toán</span>
+                                <input type="number" name="soNam" value="12">
+                                <span>( năm )</span>
+                            </div>
+                            <div class="res-btn mt-5 mb-5">
+                                <button id="0" type="button" class="btn btn-outline-primary">Lợi nhuận</button>
+                                <button id="1" type="button" class="btn btn-outline-secondary">Chi phí</button>
+                                <button id="2" type="button" class="btn btn-outline-success">Doanh Thu</button>
+                                <button id="3" type="button" class="btn btn-outline-danger">Thông số</button>
+                            </div>
+                            <div class="res result-1">
+                                <h3 style="margin: 20px 0">
+                                    Lợi nhuận
+                                </h3>
+                                <div style="display: flex; justify-content: end;">
+                                    <p>(đơn vị: triệu đồng)</p>
+                                </div>
+                                <table class="table table-hover" style="border-radius: 5px; font-size: 12px">
+                                    <thead class="thead-light bg-primary text-light" >
+                                        <tr>
+                                            <th scope="col" style="text-align: center">năm</th>
+                                            <th scope="col" style="text-align: center">doanh thu/năm</th>
+                                            <th scope="col" style="text-align: center">chi phi/năm</th>
+                                            <th scope="col" style="text-align: center">lợi nhuận/năm</th>
+                                            <th scope="col" style="text-align: center">tổng doanh thu</th>
+                                            <th scope="col" style="text-align: center">tổng chi phi</th>
+                                            <th scope="col" style="text-align: center">lợi nhuận</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="res-table-1">
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="res result-2">
+                                <h3 style="margin: 20px 0">
+                                    Chi phí
+                                </h3>
+                                <div style="display: flex; justify-content: end;">
+                                    <p>(đơn vị: triệu đồng)</p>
+                                </div>
+                                <table class="table table-hover" style="border-radius: 5px; font-size: 12px">
+                                    <thead class="thead-light bg-primary text-light" >
+                                        <tr>
+                                            <th scope="col" style="text-align: center">năm</th>
+                                            <th scope="col" style="text-align: center">lương</th>
+                                            <th scope="col" style="text-align: center">tông lương</th>
+                                            <th scope="col" style="text-align: center">BHXH</th> 
+                                            <th scope="col" style="text-align: center">đào tạo</th>
+                                            <th scope="col" style="text-align: center">điện nước</th>
+                                            <th scope="col" style="text-align: center">quảng cáo</th>
+                                            <th scope="col" style="text-align: center">sửa chữa</th>
+                                            <th scope="col" style="text-align: center">quản lý</th>
+                                            <th scope="col" style="text-align: center">phòng ngủ</th>
+                                            <th scope="col" style="text-align: center">nhà hàng</th>
+                                            <th scope="col" style="text-align: center">tổng chi phí</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="res-table-2">
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="res result-3">
+                                <h3 style="margin: 20px 0">Doanh thu</h3>
+                                <div style="display: flex; justify-content: end;">
+                                    <p>(đơn vị: triệu đồng)</p>
+                                </div>
+                                <table class="table table-hover" style="border-radius: 5px; font-size: 12px">
+                                    <thead class="thead-light bg-primary text-light" >
+                                        <tr>
+                                            <th scope="col" style="text-align: center">năm</th>
+                                            <th scope="col" style="text-align: center">công suất</th>
+                                            <th scope="col" style="text-align: center">giá phòng</th>
+                                            <th scope="col" style="text-align: center">doanh thu nhà hàng</th>
+                                            <th scope="col" style="text-align: center">doanh thu phòng</th>
+                                            <th scope="col" style="text-align: center">doanh thu spa + tour</th>
+                                            <th scope="col" style="text-align: center">tổng doanh thu</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="res-table-3">
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="res result-4">
+                                <h3 style="margin: 20px 0">Thông số</h3>
+                                <div style="display: flex; justify-content: end;">
+                                    <p>(đơn vị: triệu đồng)</p>
+                                </div>
+                                <table class="table table-hover" style="border-radius: 5px; font-size: 12px">
+                                    <thead class="thead-light bg-primary text-light" >
+                                        <tr>
+                                            <th scope="col" style="text-align: center">NPV</th>
+                                            <th scope="col" style="text-align: center">IRR</th>
+                                            <th scope="col" style="text-align: center">BCR</th>
+                                            <th scope="col" style="text-align: center">Thời gian thu hồi vốn</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="res-table-4">
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+<script>
+    // doanh thu
+    $(document).ready(function() {
+        $('.res').addClass('hide');
+
+        $('.res-btn .btn').on('click', function() {
+            result();
+            let getId = $(this).attr('id');
+            $(`.res`).map(function(i, val){
+            if(i == getId) {
+                $(val).addClass('show');
+                $(val).removeClass('hide')
+            } else {
+                $(val).addClass('hide');
+                $(val).removeClass('show')
+            }
+            })
+        })
+
+        function result() {
+            $($('.res')[0]).removeClass('hide');
+            $('.res').val('');
+            const nam = $('input[name="soNam"]').val();
+            let data = chiPhi(doanhThu(nam), nam);
+            let result = ThongSo(data.arrDTNam, data.arrCPNam);
+            
+            $('.res-table-1').html('')
+            for(let i = 0; i < nam; i++) {
+                let loiNhuan = data.arrTongDT[i].toFixed(2)- data.arrTongCP[i].toFixed(2);
+                let element = `<tr>
+                                    <th class="text-primary" scope="row" style="text-align: center">${i+1}</th>
+                                    <td class="text-primary" style="text-align: center">${data.arrDTNam[i].toFixed(2)}</td>
+                                    <td class="text-primary" style="text-align: center">${data.arrCPNam[i].toFixed(2)}</td>
+                                    <td class="text-primary" style="text-align: center">${(data.arrDTNam[i] - data.arrCPNam[i]).toFixed(2)}</td>
+                                    <td class="text-primary" style="text-align: center">${data.arrTongDT[i].toFixed(2)}</td>
+                                    <td class="text-primary" style="text-align: center">${data.arrTongCP[i].toFixed(2)}</td>
+                                    <td class="text-primary" style="text-align: center">${loiNhuan.toFixed(2)}</td>
+                                </tr>`;
+                $('.res-table-1').append(element);
+            }
+            // chi phi tung thanh phan
+            $('.res-table-2').html('')
+            for(let i = 0; i < nam; i++) {
+                let element = `<tr>
+                                    <th class="text-primary" scope="row" style="text-align: center">${i+1}</th>
+                                    <td class="text-primary" style="text-align: center">${data.CP.luong[i].toFixed(2)}</td>
+                                    <td class="text-primary" style="text-align: center">${data.CP.tongLuong[i].toFixed(1)}</td>
+                                    <td class="text-primary" style="text-align: center">${data.CP.BHXH[i].toFixed(1)}</td>
+                                    <td class="text-primary" style="text-align: center">${data.CP.daoTao[i].toFixed(1)}</td>
+                                    <td class="text-primary" style="text-align: center">${data.CP.dienNuoc[i].toFixed(1)}</td>
+                                    <td class="text-primary" style="text-align: center">${data.CP.quangCao[i].toFixed(1)}</td>
+                                    <td class="text-primary" style="text-align: center">${data.CP.suaChua[i].toFixed(1)}</td>
+                                    <td class="text-primary" style="text-align: center">${data.CP.quanLy[i].toFixed(1)}</td>
+                                    <td class="text-primary" style="text-align: center">${data.CP.phongNgu[i].toFixed(1)}</td>
+                                    <td class="text-primary" style="text-align: center">${data.CP.nhaHang[i].toFixed(1)}</td>
+                                    <td class="text-primary" style="text-align: center">${data.CP.tongChiPhi[i].toFixed(1)}</td>
+                                </tr>`;
+                $('.res-table-2').append(element);
+            }
+            // doanh thu tung thanh phan
+            $('.res-table-3').html('')
+            for(let i = 0; i < nam; i++) {
+                let element = `<tr>
+                                    <th class="text-primary" scope="row" style="text-align: center">${i+1}</th>
+                                    <td class="text-primary" style="text-align: center">${data.DT.congSuat[i]}</td>
+                                    <td class="text-primary" style="text-align: center">${data.DT.giaPhong[i].toFixed(2)}</td>
+                                    <td class="text-primary" style="text-align: center">${data.DT.nhaHang[i].toFixed(1)}</td>
+                                    <td class="text-primary" style="text-align: center">${data.DT.phong[i].toFixed(1)}</td>
+                                    <td class="text-primary" style="text-align: center">${data.DT.spa[i].toFixed(1)}</td>
+                                    <td class="text-primary" style="text-align: center">${data.DT.tongDoanhThu[i].toFixed(1)}</td>
+                                </tr>`;
+                $('.res-table-3').append(element);
+            }
+            // các thông số
+            $('.res-table-4').html('')
+            console.log(result);
+            if(result instanceof Object) {
+                let element = `<tr>
+                                    <td class="text-primary" style="text-align: center">${result.NPV.toFixed(5)}</td>
+                                    <td class="text-primary" style="text-align: center">${result.IRR.toFixed(5)}</td>
+                                    <td class="text-primary" style="text-align: center">${result.BCR.toFixed(5)}</td>
+                                    <td class="text-primary" style="text-align: center">${result.t}</td>
+                                </tr>`;
+                $('.res-table-4').append(element);
+            } else {
+                $('.res-table-4').append('không thể tính toán');
+            }
+
+        }
+    
+        function doanhThu(nam) {
+            // danh thu
+            const soPhong = parseFloat($('input[name="soPhong"]').val());
+            let giaPhong = parseFloat($('input[name="giaPhong"]').val());
+            const TDTangGia = parseFloat($('input[name="giaTang"]').val());
+            const DTNhaHang = parseFloat($('input[name="nhaHang"]').val());
+            const DTSpa = parseFloat($('input[name="spa"]').val());
+            const congSuat1 = parseFloat($('input[name="congSuat1"]').val());
+            const congSuat2 = parseFloat($('input[name="congSuat2"]').val());
+            const congSuat3 = parseFloat( $('input[name="congSuat3"]').val());
+            let tongDoanhThu = 0;
+            let TDTNam = [], DTNam = [], DTNamNhaHang = [], DTP = [];
+            let DT = {
+                congSuat: [],
+                giaPhong: [],
+                nhaHang: [],
+                phong: [],
+                spa: [],
+                tongDoanhThu: [],
+            };
+            for (let i = 1; i <= nam; i++) {
+                let doanhThuPhong = 0, congSuat = 0;
+                let x;
+                if(i===1) {
+                    congSuat = congSuat1;
+                    x = 0;
+                } else {
+                    x = TDTangGia;
+                }
+                if(i > 1 && i <= 8) congSuat = congSuat2;
+                if(i > 8) congSuat = congSuat3;
+                giaPhong = giaPhong*(1 + x/100);
+                doanhThuPhong = soPhong*giaPhong*365*congSuat/100;
+                tongDoanhThu += doanhThuPhong + doanhThuPhong*(DTNhaHang+DTSpa)/100 ;
+                DTP.push(doanhThuPhong)
+                // doanh thu moi nam
+                DTNam.push(doanhThuPhong*(DTNhaHang+DTSpa)/100 + doanhThuPhong);
+                // doanh thu nha hang moi nam
+                DTNamNhaHang.push(doanhThuPhong*DTNhaHang/100);
+                // doanh thu tong tich luy
+                TDTNam.push(tongDoanhThu);
+                // doanh thu thanh phan 
+                DT.congSuat.push(congSuat);
+                DT.giaPhong.push(giaPhong);
+                DT.nhaHang = DTNamNhaHang;
+                DT.spa.push(doanhThuPhong*DTSpa/100);
+                DT.phong.push(doanhThuPhong);
+            }
+            DT.tongDoanhThu = DTNam;
+            return {
+                tongDoanhThu,
+                arrTongDT: TDTNam,
+                arrDT: DTNam,
+                arrDTNH: DTNamNhaHang,
+                arrDTP: DTP,
+                DT
+            };
+        }
+        function chiPhi(data, nam) {
+            let luong = parseFloat($('input[name="luong"]').val());
+            const soLaoDong = parseFloat($('input[name="soLaoDong"]').val());
+            const TDTangLuong = parseFloat($('input[name="tangLuong"]').val());
+            const CPBHXH = parseFloat($('input[name="BHXH"]').val());
+            const CPDaoTao = parseFloat($('input[name="daoTao"]').val());
+            const CPDienNuoc = parseFloat($('input[name="dienNuoc"]').val());
+            const CPSuaChua = parseFloat($('input[name="suaChua"]').val());
+            let CPQuangCao = parseFloat($('input[name="quangCao"]').val());
+            const CPThueDat = parseFloat($('input[name="thueDat"]').val());
+            const CPQuanLy = parseFloat($('input[name="quanLy"]').val());
+            const CPPhongNgu = parseFloat($('input[name="phongNgu"]').val());
+            const CPNhaHang = parseFloat($('input[name="hDNhaHang"]').val());
+            const CPMoiGioi = parseFloat($('input[name="moiGioi"]').val());
+            const CPKhaoHao = parseFloat($('input[name="khaoHao"]').val());
+            const CPBlocking = parseFloat($('input[name="blocking"]').val());
+            let tongChiPhi = 0;
+            let arrTongCP = [], arrCPNam = [];
+            let CP = {
+                luong: [],
+                tongLuong: [],
+                BHXH: [],
+                daoTao: [], 
+                dienNuoc: [], 
+                suaChua: [], 
+                quangCao: [], 
+                quanLy: [],
+                phongNgu: [],
+                nhaHang: [],
+                tongChiPhi: []
+            }
+            for(let i = 1 ; i <= nam; i++) {
+                let chiPhi = 0;
+                i === 1 ? x = 0 : x = TDTangLuong; 
+                luong = luong*(1 + x/100);
+                let cpChung = (CPDaoTao + CPDienNuoc + CPSuaChua + CPQuangCao + CPQuanLy + CPPhongNgu + CPMoiGioi)/100;
+                chiPhi = (1 + CPBHXH/100)*luong*12*soLaoDong + cpChung*data.arrDT[i-1] + CPThueDat + data.arrDTNH[i-1]*CPNhaHang/100 + data.arrDTP[i-1]*(CPKhaoHao+CPBlocking)/100;
+                tongChiPhi += chiPhi;
+                // chi phi moi nam
+                arrCPNam.push(parseFloat(chiPhi));
+                // tong chi phi cac nam
+                arrTongCP.push(parseFloat(tongChiPhi));
+                // chi phi tung thanh phan
+                CP.luong.push(luong);
+                CP.tongLuong.push(12*luong*soLaoDong);
+                CP.BHXH.push(luong*soLaoDong*12*CPBHXH/100);
+                CP.daoTao.push(data.arrDT[i-1]*CPDaoTao/100);
+                CP.dienNuoc.push(data.arrDT[i-1]*CPDienNuoc/100);
+                CP.suaChua.push(data.arrDT[i-1]*CPSuaChua/100);
+                CP.quangCao.push(data.arrDT[i-1]*CPQuangCao/100);
+                CP.quanLy.push(data.arrDT[i-1]*CPQuanLy/100);
+                CP.phongNgu.push(data.arrDT[i-1]*CPPhongNgu/100);
+                CP.nhaHang.push(data.arrDTNH[i-1]*CPNhaHang/100);
+                CP.tongChiPhi.push(chiPhi);
+            }
+            return {
+                arrTongCP,
+                arrTongDT: data.arrTongDT,
+                arrCPNam,
+                CP,
+                DT: data.DT,
+                arrDTNam: data.arrDT,
+            }
+        } 
+        // tinh NPV BCR 
+        function ThongSo(doanhThu, chiPhi) {
+            const CPXayDung = parseFloat($('input[name="CPXayDung"]').val());
+            const VonCaNhan = parseFloat($('input[name="VonCaNhan"]').val());
+            const VonNganHang = parseFloat($('input[name="VonNganHang"]').val());
+            const LSGui = parseFloat($('input[name="LSGui"]').val());
+            const LSVayDaiHan = parseFloat($('input[name="LSVayDaiHan"]').val());
+            let dongTienHienTai = [], arrLoiNhuan = [],  sum = 0, sumTienVao = 0, sumTienRa = 0;
+            let result = {
+                NPV: 0,
+                IRR: 0,
+                BCR: 0,
+                t: ''
+            }
+            let r = (VonCaNhan*LSGui + VonNganHang*LSVayDaiHan)/(CPXayDung*100);
+            for(let i = 0; i < doanhThu.length; i++) {
+                let loiNhuan = doanhThu[i] - chiPhi[i];
+                arrLoiNhuan.push(loiNhuan);
+                dongTienHienTai.push(loiNhuan/Math.pow(1+r, i+1));
+                sum += loiNhuan/Math.pow(1+r, i+1);
+                sumTienVao += doanhThu[i];
+                sumTienRa += chiPhi[i];
+            }   
+            let s = arrLoiNhuan.reduce((a, b) => a+b);
+            // tính NPV
+            result.NPV = sum - CPXayDung;
+            // tính BCR
+            result.BCR = (sumTienVao/(sumTienRa+CPXayDung));
+            if(s > CPXayDung) {
+                // tính IRR
+                arrLoiNhuan.unshift(-CPXayDung)
+                result.IRR = IRRCalc(arrLoiNhuan);
+
+                // tính thoi gian thu hoi Von
+                arrLoiNhuan.shift()
+                result.t = ThuHoiVon(CPXayDung, arrLoiNhuan);
+                return result;
+            }
+            console.log( result );
+            return 'không thể tính toán';
+        }
+        // thoi gian thu hoi von
+        function ThuHoiVon(CPXayDung, arrLoiNhuan) {
+            let sum = 0, i = 0, s = 0;
+            let LoiNhuan = arrLoiNhuan.reduce((a, b) => a+b);
+            if(LoiNhuan < CPXayDung) return (`chưa thu hồi được vốn`);
+            while (sum < CPXayDung) {
+                let lastSum = sum;
+                sum += arrLoiNhuan[i];
+                i++;
+                if(sum > CPXayDung) {
+                    return (`${i-1} năm ${parseInt((CPXayDung-lastSum)*365/(sum-lastSum))} ngày`);
+                }
+            }
+        }
+        // tinh IRR
+        function IRRCalc(CArray) {
+            min = 0.0;
+            max = 1.0;
+            do {
+                guest = (min + max) / 2;
+                NPV = 0;
+                for (var j=0; j<CArray.length; j++) {
+                    NPV += CArray[j]/Math.pow((1+guest),j);
+                }
+                if (NPV > 0) {
+                    min = guest;
+                } else {
+                    max = guest;
+                }
+            } while(Math.abs(NPV) > 0.000001);
+            return guest * 100;
+        }
+    })
+</script>
+</html>
